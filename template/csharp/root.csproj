@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+      <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="./Program.cs"></Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenFaaS.Dotnet" Version="0.0.1" />
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+</Project>
