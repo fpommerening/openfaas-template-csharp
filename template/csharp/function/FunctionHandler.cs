@@ -1,17 +1,11 @@
-﻿using OpenFaaS.Dotnet;
-
+﻿
 namespace Function
 {
-    public class FunctionHandler : BaseFunction
+    public class FunctionHandler
     {
-        public FunctionHandler(IFunctionContext functionContext)
-            : base(functionContext)
+        public void Handle(string input)
         {
-        }
-
-        public override void Handle(string input)
-        {
-            Context.WriteContent($"Hi there - your input was: {input}");
+            System.Console.WriteLine($"Hi there - your input was: {input}");
         }
     }
 }

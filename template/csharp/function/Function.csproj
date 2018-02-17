@@ -1,12 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
-  <PropertyGroup>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="OpenFaaS.Dotnet" Version="0.0.1" />
-  </ItemGroup>
-</Project>
+    <PropertyGroup>
+      <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+    <PropertyGroup>
+      <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    </PropertyGroup>
+  
+  </Project>

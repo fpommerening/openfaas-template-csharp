@@ -4,6 +4,7 @@
 using System;
 using System.Text;
 using Function;
+using OpenFaaS.Dotnet;
 
 namespace root
 {
@@ -22,7 +23,8 @@ namespace root
         static void Main(string[] args)
         {
             string buffer = getStdin();
-            var f = new FunctionHandler();
+            var context = new DefaultFunctionContext();
+            FunctionHandler f = new FunctionHandler(context);
             f.Handle(buffer);
         }
     }
