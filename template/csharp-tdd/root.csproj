@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenFaaS.Dotnet" Version="0.0.1" />
+    <PackageReference Include="OpenFaaS.Dotnet" Version="0.0.2" />
   </ItemGroup>
   <PropertyGroup>
     <OutputType>Exe</OutputType>
