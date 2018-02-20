@@ -1,2 +1,2 @@
-language: csharp-tdd
+language: csharp-common
 fprocess: dotnet ./root.dll

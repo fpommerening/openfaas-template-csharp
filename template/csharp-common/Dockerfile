@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.0-sdk as builder
+FROM csharp-common as builder
 
 ENV DOTNET_CLI_TELEMETRY_OPTOUT 1
 
