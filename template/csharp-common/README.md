@@ -10,12 +10,13 @@ Die Logik ist zum großen Teil in Power-Shell Scripten untergebracht.
 - OpenFaaS-CLI (faas-cli.exe) ist unter c:\OpenFaaS\ abgelegt
 - .NET Core 2
 
-(!) Hinweis: Alle folgenden Befehlen werden im Root ausgeführt. Dort werden die Projektmappe inkl. der Funktionen erstellt.
+(!) Hinweis: Alle folgenden Befehlen werden im Root ausgeführt. Dort werden dann die Projektmappe inkl. der Funktionen erstellt.
 
 ## Projektstruktur
 Im Projektordner befindet sich die Projektmappe und die OpenFaaS-Stack-Definition.
 Die Gemeinsam genutzten Projekt müssen im Ordner Common liegen.
 
+    ROOT
     |-- Common
     |   |-- Data
     |   |-- Logic
