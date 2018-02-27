@@ -1,8 +1,8 @@
 # Funktionen mit geteilten Bibliotheken
 
-Bei der Nutzung von Functions die einen Kontext abbilden ist das teilen von Quellcode sinnvoll.
-Dies umfasst z.B. Komponenten für den Datenzugriff oder gemeine Modelle. Mit dieser Vorlage könnt
-ihr eine Projektmappe mit verschiedenen Projekten zusammenfassen und bauen.
+Bei der Nutzung von Functions, die einen Kontext abbilden ist das teilen von Quellcode sinnvoll.
+Dies umfasst z.B. Komponenten für den Datenzugriff oder gemeinsame Modelle. Mit dieser Vorlage könnt
+ihr eine Projektmappe mit verschiedenen Function-Projekten zusammenfassen und bauen.
 
 Die Logik ist zum großen Teil in Power-Shell Scripten untergebracht.
 
@@ -14,7 +14,7 @@ Die Logik ist zum großen Teil in Power-Shell Scripten untergebracht.
 
 ## Projektstruktur
 Im Projektordner befindet sich die Projektmappe und die OpenFaaS-Stack-Definition.
-Die Gemeinsam genutzten Projekt müssen im Ordner Common liegen.
+Die gemeinsam genutzten Projekt müssen im Ordner Common liegen.
 
     ROOT
     |-- Common
@@ -32,7 +32,7 @@ Die Gemeinsam genutzten Projekt müssen im Ordner Common liegen.
 
 ## Template herunterladen
 
-Mit der OpenFaaS-CLI die Vorlagen aus einen git-Repository laden.
+Mit der OpenFaaS-CLI werden die Vorlagen aus einen git-Repository geladen.
 
     c:\OpenFaaS\faas-cli.exe template pull https://github.com/fpommerening/openfaas-template-csharp.git
 
@@ -44,7 +44,7 @@ Die OpenFaaS-Stack-Defintion heißt per Default stack.yml. Auch diese kann nach 
     ps: ./template/csharp-common/new.ps1 myfunction
 
 ## Functions bauen
-Für den Bau des Docker-Image wird ebenfalls ein Power-Shell-Script verwendet.
+Für den Bau der Docker-Images wird ebenfalls ein Power-Shell-Script verwendet.
 
     ps: ./template/csharp-common/build.ps1
 
