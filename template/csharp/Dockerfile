@@ -21,7 +21,7 @@ RUN dotnet publish -c release -o published
 FROM microsoft/dotnet:2.0-runtime
 
 RUN echo "Pulling watchdog binary from Github." \
-    && curl -sSL https://github.com/openfaas/faas/releases/download/0.7.2/fwatchdog > /usr/bin/fwatchdog \
+    && curl -sSL https://github.com/openfaas/faas/releases/download/0.7.5/fwatchdog > /usr/bin/fwatchdog \
     && chmod +x /usr/bin/fwatchdog
 
 WORKDIR /root/
