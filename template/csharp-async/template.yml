@@ -1,0 +1,2 @@
+language: csharp-async
+fprocess: dotnet ./root.dll
