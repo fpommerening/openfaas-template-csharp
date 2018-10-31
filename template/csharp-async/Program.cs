@@ -22,7 +22,7 @@ namespace root
 
         static void Main(string[] args)
         {
-            MainAsync().GetAwaiter().Result();
+            MainAsync().GetAwaiter().GetResult();
         }
 
         static async Task MainAsync()
