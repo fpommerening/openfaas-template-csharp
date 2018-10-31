@@ -3,9 +3,6 @@
   <PropertyGroup>
       <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
- <ItemGroup>
-    <PackageReference Include="OpenFaaS.Dotnet" Version="0.0.2" />
-  </ItemGroup>
   <ItemGroup>
     <Compile Include="./Program.cs"></Compile>
   </ItemGroup>
