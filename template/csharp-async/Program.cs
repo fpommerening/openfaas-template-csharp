@@ -10,16 +10,6 @@ namespace root
 {
     class Program
     {
-        private static string getStdin() {
-            StringBuilder buffer = new StringBuilder();
-            string s;
-            while ((s = Console.ReadLine()) != null)
-            {
-                buffer.AppendLine(s);
-            }
-            return buffer.ToString();
-        }
-
         static void Main(string[] args)
         {
             MainAsync().GetAwaiter().GetResult();
@@ -27,7 +17,7 @@ namespace root
 
         static async Task MainAsync()
         {
-            string buffer = getStdin();
+            string buffer = await Console.In.ReadToEndAsync();
             FunctionHandler f = new FunctionHandler();
 
             string responseValue = await f.Handle(buffer);

@@ -9,9 +9,9 @@ namespace Function
         {
         }
 
-        public override void Handle(string input)
+        public override string Handle(string input)
         {
-            Context.WriteContent($"Hi there - your input was: {input}");
+            return $"Hi there - your input was: {input}";
         }
     }
 }
